@@ -14,7 +14,4 @@ echo"<br>";
 echo "$senha";
 echo"<br>";
 
-
-print_r($_POST);
-
 ?>
