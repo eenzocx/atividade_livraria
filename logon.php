@@ -10,21 +10,21 @@ include 'conexao.php';
 //selecionar os dados no banco de dados
 
 $select = "SELECT * FROM tb_user WHERE login = '$nome'";
-$quely= mysqli_query($conexao.$select);
+$query = mysqli_query($conexao,  $select);
 
 $result = mysqli_fetch_array($query);
 
 //Dados do banco armazenado na variavel
 
 
-$name_banco = echo $result['login'];
+$name_banco =  $result['login'];
 $senha_banco = $result['senha'];
 
 //Comparação para acessar o sistema
 
 if ($nome == $name_banco && $senha == $senha_banco) {
 
-    header(location: 'cadastro_cliente.php')
+    header('location: cadastro_cliente.html');
 } else{
 
     echo "<script>alert('Usuário Invalido!'; history.back())</script>";
