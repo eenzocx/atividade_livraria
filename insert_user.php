@@ -16,7 +16,7 @@ $insert = "INSERT INTO tb_user VALUES (NULL, '$nome', '$setor', '$login', '$senh
 //inserindo os dados no banco de dados utilizando a função mysqli
 $query = mysqli_query($conexao, $insert);
 
-echo"inserido com Sucesso";
+echo  "inserido com Sucesso";
 
 
 

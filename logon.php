@@ -27,7 +27,7 @@ if ($nome == $name_banco && $senha == $senha_banco) {
     header('location: cadastro_cliente.html');
 } else{
 
-    echo "<script>alert('Usuário Invalido!'; history.back())</script>";
+    echo("<script>alert('Usuário Invalido!'; history.back())</script>");
 
 
 }
